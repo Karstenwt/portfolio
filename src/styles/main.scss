@@ -1,0 +1,36 @@
+
+$primary-color: #ff6b6b;
+$background-color: #0d0d0d;
+$text-color: #ffffff;
+$accent-color: #5bffb5;
+
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: $background-color;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+html {
+  scroll-behavior: smooth;
+}
