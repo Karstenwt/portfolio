@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Home from "./Pages/Home/Home";
 import Navbar from "./Components/Navbar/Navbar";
 import About from "./Pages/About/About";
+import Contact from "./Pages/Contact/Contact"; 
 import Footer from "./Components/Footer/Footer"; 
 
 const App = () => {
@@ -27,6 +28,14 @@ const App = () => {
             element={
               <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
                 <About />
+              </motion.div>
+            }
+          />
+          <Route
+            path="/contact"
+            element={
+              <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+                <Contact />
               </motion.div>
             }
           />

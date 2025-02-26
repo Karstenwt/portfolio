@@ -1,0 +1,87 @@
+.contact-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 40px;
+  background: #1a1a1a;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+  h1 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 15px;
+  }
+
+  p {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-bottom: 20px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      border: none; 
+      border-radius: 8px;
+      background: #2a2a2a;
+      color: white;
+      font-size: 1rem;
+      outline: none; 
+
+      &:focus {
+        box-shadow: 0px 0px 5px rgba(0, 234, 255, 0.5);
+      }
+    }
+
+    textarea {
+      resize: none;
+      height: 120px;
+    }
+
+    // ✅ Nouveau style pour le bouton Envoyer
+    button {
+      background: linear-gradient(135deg, #00eaff, #0077ff);
+      color: white;
+      font-size: 1.1rem;
+      font-weight: 600;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      box-shadow: 0px 4px 15px rgba(0, 234, 255, 0.3);
+
+      &:hover {
+        background: linear-gradient(135deg, #0077ff, #00eaff);
+        box-shadow: 0px 6px 20px rgba(0, 234, 255, 0.5);
+        transform: translateY(-2px);
+      }
+
+      &:active {
+        transform: translateY(1px);
+      }
+    }
+  }
+
+  .email-button {
+    display: inline-block;
+    margin-top: 15px;
+    color: white; 
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: opacity 0.3s ease-in-out;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
