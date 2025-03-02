@@ -18,6 +18,8 @@ const projects = [
     github: "https://karstenwt.github.io/Sophie-Bluel/",
     technologies: ["JavaScript", "API REST", "CSS3", "JWT Auth"],
   },
+
+  
 ];
 
 export default projects;
