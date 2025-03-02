@@ -1,9 +1,12 @@
+import ohmyfood from "../assets/images/ohmyfood.png";
+import sophiebluel from "../assets/images/sophiebluel.png";
+
 const projects = [
   {
     id: 1,
     title: "OhmyFood",
     description: "OhmyFood est une application web...",
-    image: require("../assets/images/ohmyfood.png"), 
+    image: ohmyfood,  
     github: "https://github.com/Karstenwt/OhmyFood",
     technologies: ["HTML5", "CSS3", "Sass", "Animations CSS"],
   },
@@ -11,7 +14,7 @@ const projects = [
     id: 2,
     title: "Sophie Bluel",
     description: "Sophie Bluel est une application web...",
-    image: require("../assets/images/sophiebluel.png"),
+    image: sophiebluel,  
     github: "https://karstenwt.github.io/Sophie-Bluel/",
     technologies: ["JavaScript", "API REST", "CSS3", "JWT Auth"],
   },

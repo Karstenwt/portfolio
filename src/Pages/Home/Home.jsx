@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import "./Home.scss";
 import KarstenPhoto from "../../assets/images/Karsten.webp";
 import projects from "../../data/projectsData"; 
-import ProjectCard from "../../components/ProjectCard"; 
+import ProjectCard from "../../components/ProjectCard/ProjectCard";
 
 const Home = () => {
   return (
@@ -30,6 +30,7 @@ const Home = () => {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
+          
         >
           <img className="home-photo" src={KarstenPhoto} alt="Karsten" />
         </motion.div>
