@@ -1,9 +1,7 @@
-
 $primary-color: #ff6b6b;
 $background-color: #0d0d0d;
 $text-color: #ffffff;
 $accent-color: #5bffb5;
-
 
 body {
   font-family: "Inter", sans-serif;
@@ -14,13 +12,31 @@ body {
   overflow-x: hidden;
 }
 
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  margin-top: auto;
+}
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
-
 
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
