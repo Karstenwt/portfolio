@@ -1,6 +1,7 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { motion } from "framer-motion";
-import "./ProjectCard.scss"; 
+import "./ProjectCard.scss";
 
 const ProjectCard = ({ project }) => {
   return (
@@ -23,6 +24,17 @@ const ProjectCard = ({ project }) => {
       </a>
     </motion.div>
   );
+};
+
+ProjectCard.propTypes = {
+  project: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    github: PropTypes.string.isRequired,
+    technologies: PropTypes.arrayOf(PropTypes.string).isRequired,
+  }).isRequired,
 };
 
 export default ProjectCard;
